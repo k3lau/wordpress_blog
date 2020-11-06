@@ -77,9 +77,14 @@ function create_my_custom_post() {
 			'has_archive' => true,
 			'supports' => array(
 				'title', 'editor', 'thumbnail', 'custom-fields'
-				)
+			),
+			'taxinomies' => array(
+				'post_tag', 'category'
+			)
 			)
 		);
+	register_taxonomy_for_object_type( 'category', 'my_custom_post' );
+	register_taxonomy_for_object_type( 'post_tag', 'my_custom_post' );
 }
 add_action( 'init', 'create_my_custom_post' );
 ?>

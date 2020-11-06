@@ -20,7 +20,7 @@
 
 <body>
 
-    <div class="blog-masthead">
+    <div class="blog-masthead d-flex align-items-end">
         <div class="container">
             <nav class="blog-nav">
                 <a class="blog-nav-item active" href="<?php echo get_bloginfo('wpurl');?>">Home</a>
